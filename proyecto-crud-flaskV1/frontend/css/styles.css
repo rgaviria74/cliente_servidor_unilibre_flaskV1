@@ -80,10 +80,22 @@ button {
     flex: 1;
 }
 
-#submit-btn:hover {
+#submit-btn:hover:not(:disabled) {
     background: #5568d3;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+#submit-btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.empty-row td {
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    padding: 25px;
 }
 
 #cancel-btn {

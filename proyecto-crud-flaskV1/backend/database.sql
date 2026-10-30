@@ -10,8 +10,8 @@ CREATE TABLE IF NOT EXISTS estudiantes (
     fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Datos de ejemplo
-INSERT INTO estudiantes (nombre, apellido, edad, carrera) VALUES
-('Juan', 'Pérez', 20, 'Ingeniería de Sistemas'),
-('María', 'González', 22, 'Ingeniería Industrial'),
-('Carlos', 'Rodríguez', 21, 'Ingeniería Electrónica');
+-- Datos de ejemplo (el id no es AUTO_INCREMENT, por eso se indica manualmente)
+INSERT IGNORE INTO estudiantes (id, nombre, apellido, edad, carrera) VALUES
+(1, 'Juan', 'Pérez', 20, 'Ingeniería de Sistemas'),
+(2, 'María', 'González', 22, 'Ingeniería Industrial'),
+(3, 'Carlos', 'Rodríguez', 21, 'Ingeniería Electrónica');

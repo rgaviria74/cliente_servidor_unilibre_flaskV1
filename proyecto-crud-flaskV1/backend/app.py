@@ -3,7 +3,7 @@ from routes.estudiantes import estudiantes_bp
 from models import estudiantes
 
 
-app = Flask(__name__)
+app = Flask(__name__) 
 
 # Permite solicitudes de origen cruzado (CORS) para todas las rutas sin una dependencia adicional.
 @app.after_request

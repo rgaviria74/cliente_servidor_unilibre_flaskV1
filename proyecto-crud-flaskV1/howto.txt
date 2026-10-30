@@ -1,0 +1,13 @@
+cd C:\compiler\cliente_servidor_unilibre\proyecto-crud-flaskV1
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+.\venv\Scripts\Activate.ps1
+
+python -m pip show flask
+
+.\venv\Scripts\python.exe -m pip show flask
+
+.\venv\Scripts\python.exe .\backend\app.py
+
+deactivate

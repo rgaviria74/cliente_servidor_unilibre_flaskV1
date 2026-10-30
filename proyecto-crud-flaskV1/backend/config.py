@@ -14,7 +14,8 @@ class DatabaseConfig:
                 host=DatabaseConfig.HOST,
                 user=DatabaseConfig.USER,
                 password=DatabaseConfig.PASSWORD,
-                database=DatabaseConfig.DATABASE
+                database=DatabaseConfig.DATABASE,
+                charset='utf8mb4'
             )
             if connection.is_connected():
                 return connection
